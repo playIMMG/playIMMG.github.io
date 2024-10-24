@@ -14,7 +14,7 @@ header {
 
 nav {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Four columns for even spacing */
+    grid-template-columns: repeat(5, 1fr); /* Four columns for even spacing */
     background-color: #333; /* Nav background color */
     color: white;
     text-align: center;
