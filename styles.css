@@ -22,12 +22,15 @@ nav {
     display: flex;
     justify-content: space-around;
     padding: 15px 0;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
 }
 
 nav a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
+    flex-grow: 1; /* Ensures links spread evenly */
+    text-align: center;
     transition: background-color 0.3s;
 }
 
