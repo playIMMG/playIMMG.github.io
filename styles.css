@@ -13,15 +13,13 @@ header {
 }
 
 nav {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Four columns for even spacing */
     background-color: #333; /* Nav background color */
     color: white;
     text-align: center;
 }
 
 .nav-row {
-    display: contents; /* Allows grid items to behave as if they are in a single row */
+    padding: 15px 0; /* Padding for nav rows */
 }
 
 nav a {
@@ -29,7 +27,7 @@ nav a {
     color: white;
     text-decoration: none;
     transition: background 0.3s;
-    text-align: center; /* Center text within the links */
+    display: inline-block; /* Display links inline */
 }
 
 nav a:hover {
@@ -39,4 +37,47 @@ nav a:hover {
 main {
     padding: 20px;
     text-align: center;
+}
+
+.game-section {
+    margin: 20px 0; /* Spacing between game sections */
+}
+
+.game-image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 0; /* Margin around images */
+}
+
+footer {
+    background-color: #333; /* Footer background color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-links {
+    margin: 10px 0; /* Margin for footer links */
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline on hover for footer links */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #800080; /* Button background color */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555; /* Darker button on hover */
 }
