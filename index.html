@@ -10,6 +10,7 @@
     <header>
         <h1>Play IMMG!</h1>
     </header>
+    
     <nav>
         <div class="nav-row">
             <a href="#">Home</a>
@@ -25,9 +26,42 @@
             <a href="#">Play Game 5</a>
         </div>
     </nav>
+
     <main>
-        <h2>Game Showcase</h2>
-        <!-- Add your game showcase content here -->
+        <section class="game-section">
+            <h2>Game 1</h2>
+            <p>Description of Game 1. This is where you can describe the game mechanics, features, and any other relevant details.</p>
+            <img src="path_to_game1_image.jpg" alt="Game 1" class="game-image"> <!-- Add the path to your Game 1 image -->
+        </section>
+        
+        <section class="game-section">
+            <h2>Game 2</h2>
+            <p>Description of Game 2. Provide details about the game here.</p>
+            <img src="path_to_game2_image.jpg" alt="Game 2" class="game-image"> <!-- Add the path to your Game 2 image -->
+        </section>
+
+        <section class="game-section">
+            <h2>Game 3</h2>
+            <p>Description of Game 3. Provide details about the game here.</p>
+            <img src="path_to_game3_image.jpg" alt="Game 3" class="game-image"> <!-- Add the path to your Game 3 image -->
+        </section>
     </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Gameplay</a>
+            <a href="#">Gallery</a>
+            <a href="#">About</a>
+        </div>
+        <button onclick="scrollToTop()">Back to Top</button>
+        <p>&copy; 2024 Play IMMG. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
