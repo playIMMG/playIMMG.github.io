@@ -2,36 +2,37 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Background color for your site */
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #800080; /* Header background color changed to purple */
+    background-color: #800080; /* Purple header */
     color: white;
     padding: 40px 20px;
     text-align: center;
 }
 
 nav {
-    background-color: #333; /* Nav background color */
+    background-color: #333;
     color: white;
     text-align: center;
 }
 
 .nav-row {
-    padding: 15px 0; /* Padding for nav rows */
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
 }
 
 nav a {
-    padding: 15px;
     color: white;
     text-decoration: none;
-    transition: background 0.3s;
-    display: inline-block; /* Display links inline */
+    padding: 10px 20px;
+    transition: background-color 0.3s;
 }
 
 nav a:hover {
-    background-color: #555; /* Change background on hover */
+    background-color: #555;
 }
 
 main {
@@ -40,24 +41,24 @@ main {
 }
 
 .game-section {
-    margin: 20px 0; /* Spacing between game sections */
+    margin: 20px 0;
 }
 
 .game-image {
-    max-width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
-    margin: 10px 0; /* Margin around images */
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
 }
 
 footer {
-    background-color: #333; /* Footer background color */
+    background-color: #333;
     color: white;
-    text-align: center;
     padding: 20px;
+    text-align: center;
 }
 
 .footer-links {
-    margin: 10px 0; /* Margin for footer links */
+    margin: 10px 0;
 }
 
 .footer-links a {
@@ -67,17 +68,17 @@ footer {
 }
 
 .footer-links a:hover {
-    text-decoration: underline; /* Underline on hover for footer links */
+    text-decoration: underline;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #800080; /* Button background color */
+    background-color: #800080;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #555; /* Darker button on hover */
+    background-color: #555;
 }
