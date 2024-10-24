@@ -14,18 +14,14 @@ header {
 
 nav {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    grid-template-columns: repeat(4, 1fr); /* Four columns for even spacing */
     background-color: #333; /* Nav background color */
     color: white;
     text-align: center;
 }
 
 .nav-row {
-    display: contents; /* Keep it for the first row */
-}
-
-.nav-row:last-of-type {
-    grid-column: span 4; /* Ensure the second row spans all columns */
+    display: contents; /* Allows grid items to behave as if they are in a single row */
 }
 
 nav a {
@@ -33,13 +29,12 @@ nav a {
     color: white;
     text-decoration: none;
     transition: background 0.3s;
+    flex: 1; /* Ensures links fill the space evenly */
 }
 
-/* Add a class for the second row */
-.second-row {
-    display: contents; /* Keep it for the second row */
+nav a:hover {
+    background-color: #555; /* Change background on hover */
 }
-
 
 main {
     padding: 20px;
