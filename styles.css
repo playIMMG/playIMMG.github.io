@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Background color for your site */
+}
+
+header {
+    background-color: #4a90e2; /* Header background color */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #333; /* Nav background color */
+    color: white;
+    text-align: center;
+}
+
+.nav-row {
+    display: contents; /* To allow grid rows to span */
+}
+
+nav a {
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #555; /* Change background on hover */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
