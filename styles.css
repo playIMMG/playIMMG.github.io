@@ -13,16 +13,19 @@ body {
 }
 
 header {
-    background-image: url('images/your-background-image.jpg');
-    background-size: cover; /* or 'contain' to make the whole image fit */
-    background-position: top center; /* Make sure the image stays aligned at the top */
-    height: 300px; /* Adjust the height as necessary */
+    background-image: url('images/your-image.jpg'); /* Replace with the correct path to your image */
+    background-size: cover; /* Ensures the image covers the whole header */
+    background-position: center; /* Centers the image */
+    height: 300px; /* Set an appropriate height for the header */
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: white; /* Ensure text is readable */
 }
 
+header h1 {
+    font-size: 3em; /* Adjust the size of your header title */
+}
 /* Navigation Bar Styling */
 nav {
     margin: 20px 0;
