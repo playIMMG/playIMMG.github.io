@@ -7,13 +7,25 @@
     <style>
         body {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        #gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3-column grid */
+            gap: 15px; /* Space between images */
+            max-width: 1024px; /* Limit gallery width */
+            padding: 20px;
         }
         img {
-            margin: 10px;
-            max-width: 300px; /* Adjust as needed */
-            max-height: 300px; /* Adjust as needed */
+            width: 100%; /* Scale images to fit grid column */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
         }
     </style>
 </head>
@@ -21,10 +33,12 @@
     <div id="gallery"></div>
     <script>
         const images = [
-            // Add your image filenames here
             'image1.jpg',
             'image2.jpg',
             'image3.jpg',
+            'image4.jpg',
+            'image5.jpg',
+            'image6.jpg',
             // Continue adding your images
         ];
 
@@ -32,7 +46,7 @@
 
         images.forEach(image => {
             const imgElement = document.createElement('img');
-            imgElement.src = `images/${image}`; // Fix: Use template literal
+            imgElement.src = `artgallery/${image}`;
             imgElement.alt = image;
             gallery.appendChild(imgElement);
         });
