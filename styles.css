@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-image: url('images/your-background-image.jpg');
+    background-image: url('meta_images/LinkedInBG.png');
     background-size: contain; /* or 'contain' to make the whole image fit */
     background-position: top center; /* Make sure the image stays aligned at the top */
     height: 300px; /* Adjust the height as necessary */
