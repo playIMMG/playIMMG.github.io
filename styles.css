@@ -13,14 +13,14 @@ body {
 }
 
 header {
-    background-image: url('meta_images/LinkedInBG.png'); /* Replace with the correct path to your image */
-    background-size: cover; /* Ensures the image covers the whole header */
-    background-position: center; /* Centers the image */
-    height: 300px; /* Set an appropriate height for the header */
+    background-image: url('images/your-background-image.jpg');
+    background-size: contain; /* or 'contain' to make the whole image fit */
+    background-position: top center; /* Make sure the image stays aligned at the top */
+    height: 300px; /* Adjust the height as necessary */
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white; /* Ensure text is readable */
+    color: white;
 }
 
 /* Navigation Bar Styling */
