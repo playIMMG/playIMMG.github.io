@@ -100,8 +100,8 @@ footer {
 
 #backToTop {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 20px;   /* Always 20px from the bottom of the screen */
+    right: 20px;    /* Always 20px from the right of the screen */
     padding: 10px 20px;
     background-color: purple;
     color: white;
@@ -110,10 +110,9 @@ footer {
     font-size: 16px;
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensures it stays on top */
+    z-index: 1000; /* Ensures it stays on top of other elements */
 }
 
 #backToTop:hover {
     background-color: #555;
 }
-
