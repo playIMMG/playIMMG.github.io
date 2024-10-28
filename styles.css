@@ -14,16 +14,14 @@ body {
 
 header {
     background-image: url('meta_images/LinkedInBG.png');
-    background-size: contain;
+    background-size: cover; /* Use cover to fill the entire header */
     background-position: top center;
-    background-repeat: no-repeat; /* Prevents the image from repeating */
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
 }
-
 header h1 {
     font-size: 3em; /* Adjust the size of your header title */
 }
