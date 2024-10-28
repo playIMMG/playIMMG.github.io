@@ -27,14 +27,14 @@ header h1 {
 }
 /* Navigation Bar Styling */
 nav {
-       margin: 0;
+    margin: 20px 0;
 }
 
 .nav-row {
     display: flex;
     justify-content: space-evenly; /* Evenly spreads out links */
     flex-wrap: wrap;
-    padding: 10px 0;
+    padding: 1px 0;
     background-color: #333;
 }
 
