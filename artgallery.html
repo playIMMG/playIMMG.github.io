@@ -6,80 +6,6 @@
     <title>Art Gallery - IMMG Studios</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="/meta_images/IMMGlogo32x32.png" type="image/png">
-</head>
-<body>
-    <header>
-        <h1></h1>
-        <p></p>
-    </header>
-
-    <nav>
-        <div class="nav-row">
-            <a href="index.html">Home</a>
-            <a href="gameplaygallery.html">Gameplay Gallery</a>
-            <a href="artgallery.html">Art Gallery</a>
-            <a href="about.html">About</a>
-        </div>
-        <div class="nav-row">
-            <a href="#">Play Mantis (soon)</a>
-            <a href="#">Play Yash (soon)</a>
-            <a href="#">Play Dinogram (soon)</a>
-            <a href="#">Play Aquastyler (soon)</a>
-            <a href="#">Play Temple Ring (soon)</a>
-            <a href="#">Play Janken Arena (soon)</a>
-            <a href="https://playIMMG.github.io/sitret/">Play Sitret</a>
-        </div>
-    </nav>
-
-    <main>
-        <h1>Art Gallery</h1>
-        <p></p>
-
-        <div id="gallery"></div>
-    </main>
-
-    <button id="backToTop" onclick="scrollToTop()">Back to Top</button>
-
-    <footer>
-        <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="gameplay.html">Gameplay</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="about.html">About</a>
-        </div>
-        <p>&copy; 2024 IMMG Studios. All rights reserved.</p>
-    </footer>
-
-    <script>
-        const images = [
-            'image1.jpeg',
-            'image2.jpeg',
-            'image3.jpeg',
-            'image4.jpeg',
-            'image5.jpeg',
-            'image6.jpeg',
-            'image7.jpeg',
-            'image8.jpeg',
-            'image9.jpeg',
-            'image10.jpeg',
-            // Continue adding your images
-        ];
-
-        const gallery = document.getElementById('gallery');
-
-        images.forEach(image => {
-            const imgElement = document.createElement('img');
-            imgElement.src = `artgallery/${image}`;
-            imgElement.alt = image;
-            imgElement.style.width = '100%';  // Fill the grid space
-            gallery.appendChild(imgElement);
-        });
-
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    </script>
-
     <style>
         /* Main layout styling */
         body {
@@ -89,6 +15,14 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
+        }
+
+        header {
+            width: 100%;
+            height: 200px; /* Adjust height as needed */
+            background-image: url('path/to/your/header-background.jpg'); /* Replace with your header image path */
+            background-size: cover;
+            background-position: center;
         }
 
         main {
@@ -109,6 +43,7 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             object-fit: cover;
+            width: 100%;  /* Fill the grid space */
         }
 
         /* Footer styling */
@@ -130,5 +65,72 @@
             text-decoration: underline;
         }
     </style>
+</head>
+<body>
+    <header>
+        <!-- Background image is applied here -->
+    </header>
+
+    <main>
+        <h1>Art Gallery</h1>
+        <p>Browse through the collection of art from IMMG Studios.</p>
+    </main>
+
+    <nav>
+        <div class="nav-row">
+            <a href="index.html">Home</a>
+            <a href="gameplaygallery.html">Gameplay Gallery</a>
+            <a href="artgallery.html">Art Gallery</a>
+            <a href="about.html">About</a>
+        </div>
+        <div class="nav-row">
+            <a href="#">Play Mantis (soon)</a>
+            <a href="#">Play Yash (soon)</a>
+            <a href="#">Play Dinogram (soon)</a>
+            <a href="#">Play Aquastyler (soon)</a>
+            <a href="#">Play Temple Ring (soon)</a>
+            <a href="#">Play Janken Arena (soon)</a>
+            <a href="https://playIMMG.github.io/sitret/">Play Sitret</a>
+        </div>
+    </nav>
+
+    <section id="gallery"></section>
+
+    <button id="backToTop" onclick="scrollToTop()">Back to Top</button>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="gameplay.html">Gameplay</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+        </div>
+        <p>&copy; 2024 IMMG Studios. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const images = [
+            'image1.jpeg',
+            'image2.jpeg',
+            'image3.jpeg',
+            'image4.jpeg',
+            'image5.jpeg',
+            'image6.jpeg',
+            // Continue adding your images
+        ];
+
+        const gallery = document.getElementById('gallery');
+
+        images.forEach(image => {
+            const imgElement = document.createElement('img');
+            imgElement.src = `artgallery/${image}`;
+            imgElement.alt = image;
+            gallery.appendChild(imgElement);
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
