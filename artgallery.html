@@ -3,34 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #f4f4f9;
-        }
-        #gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3-column grid */
-            gap: 15px; /* Space between images */
-            max-width: 1024px; /* Limit gallery width */
-            padding: 20px;
-        }
-        img {
-            width: 100%; /* Scale images to fit grid column */
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            object-fit: cover;
-        }
-    </style>
+    <title>Art Gallery - IMMG Studios</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/meta_images/IMMGlogo32x32.png" type="image/png">
 </head>
 <body>
-    <div id="gallery"></div>
+    <header>
+        <!-- Header content, if any, from index -->
+    </header>
+
+    <nav>
+        <div class="nav-row">
+            <a href="index.html">Home</a>
+            <a href="gameplaygallery.html">Gameplay Gallery</a>
+            <a href="artgallery.html">Art Gallery</a>
+            <a href="about.html">About</a>
+        </div>
+        <div class="nav-row">
+            <a href="#">Play Mantis (soon)</a>
+            <a href="#">Play Yash (soon)</a>
+            <a href="#">Play Dinogram (soon)</a>
+            <a href="#">Play Aquastyler (soon)</a>
+            <a href="#">Play Temple Ring (soon)</a>
+            <a href="#">Play Janken Arena (soon)</a>
+            <a href="https://playIMMG.github.io/sitret/">Play Sitret</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Art Gallery</h1>
+        <p>Browse through the collection of art from IMMG Studios.</p>
+
+        <div id="gallery"></div>
+    </main>
+
+    <button id="backToTop" onclick="scrollToTop()">Back to Top</button>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="gameplay.html">Gameplay</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+        </div>
+        <p>&copy; 2024 IMMG Studios. All rights reserved.</p>
+    </footer>
+
     <script>
         const images = [
             'image1.jpeg',
@@ -39,10 +57,6 @@
             'image4.jpeg',
             'image5.jpeg',
             'image6.jpeg',
-            'image7.jpeg',
-            'image8.jpeg',
-            'image9.jpeg',
-            'image10.jpeg',
             // Continue adding your images
         ];
 
@@ -52,8 +66,64 @@
             const imgElement = document.createElement('img');
             imgElement.src = `artgallery/${image}`;
             imgElement.alt = image;
+            imgElement.style.width = '100%';  // Fill the grid space
             gallery.appendChild(imgElement);
         });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
     </script>
+
+    <style>
+        /* Main layout styling */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Gallery grid styling */
+        #gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3-column grid */
+            gap: 15px;
+            max-width: 1024px;
+            margin-top: 20px;
+        }
+
+        img {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+        }
+
+        /* Footer styling */
+        footer {
+            width: 100%;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        .footer-links a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </body>
 </html>
