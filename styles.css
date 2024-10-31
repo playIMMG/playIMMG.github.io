@@ -1,4 +1,3 @@
-
 /* General reset */
 * {
     margin: 0;
@@ -6,16 +5,17 @@
     box-sizing: border-box;
 }
 
-/* Body and Header Styling */
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Stylish', Arial, sans-serif; /* Set Stylish as the default font */
     background-color: #f4f4f4;
     margin: 0;
 }
 
+/* Header Styling */
 header {
     background-image: url('meta_images/LinkedInBG.png');
-    background-size: cover; /* Use cover to fill the entire header */
+    background-size: cover;
     background-position: top center;
     height: 300px;
     display: flex;
@@ -23,9 +23,17 @@ header {
     align-items: center;
     color: white;
 }
+
 header h1 {
-    font-size: 3em; /* Adjust the size of your header title */
+    font-family: 'Lilita One', Arial, sans-serif; /* Apply Lilita One to header titles */
+    font-size: 3em;
 }
+
+/* Header Levels */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lilita One', Arial, sans-serif; /* Apply Lilita One to all headers */
+}
+
 /* Navigation Bar Styling */
 nav {
     margin: 1px 0;
@@ -33,7 +41,7 @@ nav {
 
 .nav-row {
     display: flex;
-    justify-content: space-evenly; /* Evenly spreads out links */
+    justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 10px 0;
     background-color: #333;
@@ -43,7 +51,7 @@ nav a {
     color: white;
     padding: 10px;
     text-decoration: none;
-    flex-grow: 1; /* Allows links to grow */
+    flex-grow: 1;
     text-align: center;
     transition: background-color 0.3s ease;
 }
@@ -98,17 +106,11 @@ footer {
     text-decoration: underline;
 }
 
-.back-to-top {
-    display: inline-block;
-    margin-top: 10px;
-    color: white;
-    text-decoration: none;
-}
-
+/* Back-to-Top Button */
 #backToTop {
     position: fixed;
-    bottom: 20px;   /* Always 20px from the bottom of the screen */
-    right: 20px;    /* Always 20px from the right of the screen */
+    bottom: 20px;
+    right: 20px;
     padding: 10px 20px;
     background-color: purple;
     color: white;
@@ -117,7 +119,7 @@ footer {
     font-size: 16px;
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensures it stays on top of other elements */
+    z-index: 1000;
 }
 
 #backToTop:hover {
