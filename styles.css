@@ -8,7 +8,8 @@
 /* Body Styling */
 body {
     font-family: 'Yusei Magic', Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #C9BEE7; /* Set background color to #C9BEE7 */
+    margin: 0;
 }
 
 /* Header Styling */
