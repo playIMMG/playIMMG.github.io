@@ -1,4 +1,3 @@
-
 /* General reset */
 * {
     margin: 0;
@@ -6,16 +5,17 @@
     box-sizing: border-box;
 }
 
-/* Body and Header Styling */
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Yusei Magic', Arial, sans-serif;
+    background-color: #C9BEE7; /* Set background color to #C9BEE7 */
     margin: 0;
 }
 
+/* Header Styling */
 header {
     background-image: url('meta_images/LinkedInBG.png');
-    background-size: cover; /* Use cover to fill the entire header */
+    background-size: cover;
     background-position: top center;
     height: 300px;
     display: flex;
@@ -23,17 +23,15 @@ header {
     align-items: center;
     color: white;
 }
-header h1 {
-    font-size: 3em; /* Adjust the size of your header title */
-}
-/* Navigation Bar Styling */
-nav {
-    margin: 1px 0;
+
+header h1, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lilita One', Arial, sans-serif;
 }
 
+/* Navigation Bar Styling */
 .nav-row {
     display: flex;
-    justify-content: space-evenly; /* Evenly spreads out links */
+    justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 10px 0;
     background-color: #333;
@@ -43,7 +41,7 @@ nav a {
     color: white;
     padding: 10px;
     text-decoration: none;
-    flex-grow: 1; /* Allows links to grow */
+    flex-grow: 1;
     text-align: center;
     transition: background-color 0.3s ease;
 }
@@ -57,21 +55,45 @@ main {
     padding: 20px;
 }
 
-main section {
+/* Game Section Styling */
+.game-section {
     margin-bottom: 40px;
 }
 
-main h2 {
+.game-section h2 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-main p {
+.game-section p {
     margin-bottom: 15px;
 }
 
-main img {
-    max-width: 100%;
+/* Flex container for images */
+.image-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Large image styling */
+.game-image-large {
+    width: 60%;
+    height: auto;
+    border: 2px solid #ddd;
+}
+
+/* Small images container and styling */
+.small-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+}
+
+.game-image-small {
+    width: 100%;
     height: auto;
     border: 2px solid #ddd;
 }
@@ -84,10 +106,6 @@ footer {
     padding: 20px;
 }
 
-.footer-links {
-    margin-bottom: 10px;
-}
-
 .footer-links a {
     color: white;
     margin: 0 15px;
@@ -98,17 +116,11 @@ footer {
     text-decoration: underline;
 }
 
-.back-to-top {
-    display: inline-block;
-    margin-top: 10px;
-    color: white;
-    text-decoration: none;
-}
-
+/* Back-to-Top Button */
 #backToTop {
     position: fixed;
-    bottom: 20px;   /* Always 20px from the bottom of the screen */
-    right: 20px;    /* Always 20px from the right of the screen */
+    bottom: 20px;
+    right: 20px;
     padding: 10px 20px;
     background-color: purple;
     color: white;
@@ -117,7 +129,7 @@ footer {
     font-size: 16px;
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensures it stays on top of other elements */
+    z-index: 1000;
 }
 
 #backToTop:hover {
